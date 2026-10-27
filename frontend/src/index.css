@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222 47% 11%;     /* #0F172A */
+    --foreground: 210 40% 98%;
+
+    --card: 222 47% 11%;           /* #0F172A */
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 217 91% 60%;        /* #2563EB */
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 215 25% 15%;      /* #111827 */
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 199 95% 61%;         /* #38BDF8 */
+    --accent-foreground: 222 47% 11%;
+
+    --destructive: 0 84% 60%;      /* #EF4444 */
+    --destructive-foreground: 210 40% 98%;
+
+    --success: 142 71% 45%;        /* #22C55E */
+    --success-foreground: 210 40% 98%;
+
+    --border: 217 33% 20%;
+    --input: 217 33% 20%;
+    --ring: 217 91% 60%;           /* #2563EB */
+
+    --radius: 0.375rem;
+  }
+
+  .dark {
+    --background: 222 47% 11%;     /* #0F172A */
+    --foreground: 210 40% 98%;
+
+    --card: 222 47% 11%;           /* #0F172A */
+    --card-foreground: 210 40% 98%;
+
+    --popover: 220 26% 14%;        /* #111827 */
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 217 91% 60%;        /* #2563EB */
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 220 26% 14%;      /* #111827 */
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 199 95% 61%;         /* #38BDF8 */
+    --accent-foreground: 222 47% 11%;
+
+    --destructive: 0 84% 60%;      /* #EF4444 */
+    --destructive-foreground: 210 40% 98%;
+
+    --success: 142 71% 45%;        /* #22C55E */
+    --success-foreground: 210 40% 98%;
+
+    --border: 217 33% 20%;
+    --input: 217 33% 20%;
+    --ring: 217 91% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-[#0B0F17] text-slate-100 font-sans antialiased overflow-x-hidden;
+  }
+}
+
+/* Enterprise National Command Center Accents */
+.enterprise-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+.enterprise-glass {
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Custom telemetry scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B0F17;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1E293B;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Dark OSM tile filter */
+.osm-dark-filter {
+  filter: brightness(0.6) invert(1) contrast(3) hue-rotate(200deg) saturate(0.3) brightness(0.7);
+}
+
+.leaflet-container {
+  background-color: #0B0F17 !important;
+}
+
+.custom-disaster-marker {
+  background: transparent !important;
+  border: none !important;
+}

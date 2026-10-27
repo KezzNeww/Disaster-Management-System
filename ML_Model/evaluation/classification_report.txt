@@ -1,0 +1,20 @@
+DISASTER RISK PREDICTION - MODEL CLASSIFICATION REPORT
+=====================================================
+
+Algorithm       : RandomForestClassifier
+Test Records    : 2500
+Accuracy        : 0.7336 (73.36%)
+Precision (Macro): 0.7629
+Recall (Macro)   : 0.7249
+F1 Score (Macro) : 0.7388
+
+              precision    recall  f1-score   support
+
+         Low     0.7456    0.7934    0.7688       484
+      Medium     0.6845    0.6682    0.6763       844
+        High     0.7363    0.7912    0.7628       886
+    Critical     0.8852    0.6469    0.7475       286
+
+    accuracy                         0.7336      2500
+   macro avg     0.7629    0.7249    0.7388      2500
+weighted avg     0.7377    0.7336    0.7330      2500

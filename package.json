@@ -1,0 +1,31 @@
+{
+  "name": "ai-disaster-management-system",
+  "version": "1.0.0",
+  "description": "AI Powered Smart Disaster Management System - Enterprise Command Center",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "dev:backend": "npm --prefix backend run dev",
+    "build:frontend": "npm --prefix frontend run build",
+    "build:backend": "npm --prefix backend run build",
+    "lint": "npm --prefix frontend run lint"
+  },
+  "keywords": [
+    "disaster-management",
+    "ai",
+    "palantir",
+    "azure-dashboard",
+    "enterprise",
+    "geospatial"
+  ],
+  "author": "",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
